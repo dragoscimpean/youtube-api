@@ -80,6 +80,7 @@ class Youtube
      */
     public function upload($path, array $data = [], $privacyStatus = 'public')
     {
+      dd('test');
         if(!file_exists($path)) {
             throw new Exception('Video file does not exist at path: "'. $path .'". Provide a full path to the file before attempting to upload.');
         }
